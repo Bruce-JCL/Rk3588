@@ -1,6 +1,6 @@
 and -s "am broadcast -a AidluxX11Exit -f 0x01000000"
 sleep 1
-if [ ! "$(command -v gnomeplea-session)" ]; then
+if [ ! "$(command -v gnome-session)" ]; then
   echo "Please install  gnome" >&2
   exit 1
 fi
