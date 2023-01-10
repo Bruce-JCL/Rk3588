@@ -7,4 +7,4 @@ if [ ! "$(command -v xfce4-session)" ]; then
 fi
 and -s "su root /data/data/com.aidlux/files/usr/bin/termux-x11 :1"  >/dev/null 2>&1 &
 sleep 2
-echo $1 | sudo -S env DISPLAY=:1 gnome-session --disable-acceleration-check  >/dev/null 2>&1 &
+echo $1 | sudo -S env DISPLAY=:1 xfce4-session  >/dev/null 2>&1 &
