@@ -6,5 +6,5 @@ if [ ! "$(command -v gnome-session)" ]; then
   exit 1
 fi
 and -s "su $(id -u)  /data/data/com.aidlux/files/usr/bin/aidlux-x11 :1"  >/dev/null 2>&1 &
-sleep 2
-env DISPLAY=:1 gnome-session   >/dev/null 2>&1 &
+sleep 6
+env DISPLAY=:1 gnome-shell   >/dev/null 2>&1  &
